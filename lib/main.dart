@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:laboratorio7multiplataforma/card_screen2.dart';
 
 import 'card_screen.dart';
 
@@ -35,6 +36,19 @@ class HomeScreen extends StatelessWidget {
             );
           },
         ),
+        
+      ),
+          floatingActionButton: Center(
+        child: ElevatedButton(
+          child: Text('Vamos por el segundo dark screen'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => CardScreen2()),
+            );
+          },
+        ),
+        
       ),
     );
   }
